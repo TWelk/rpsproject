@@ -1,0 +1,33 @@
+#rps {
+    display: flex;
+    justify-content:space-evenly;
+    align-content: center;
+}
+
+h1, h2 {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+#IR {
+   display: flex;
+   justify-content: center;
+   align-content: center;
+}
+
+#UserC img, #PCC img{
+    width: 50%;
+}
+
+#UserC, #PCC {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    margin: 30px;
+}
+
+#vs {
+    display: flex;
+    align-items: center;
+    font-size: x-large;
+}
