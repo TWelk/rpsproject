@@ -31,3 +31,9 @@ h1, h2 {
     align-items: center;
     font-size: x-large;
 }
+
+.score {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

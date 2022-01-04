@@ -9,7 +9,7 @@ const lvls = ["Easy", "Medium", "Hard"]
 const handleLvl = (e) => {
     lvl = e.target.id
     hd.innerHTML = ""
-    hd2.innerHTML = "Please choose weapon..."
+    hd2.innerHTML = "Choose your weapon..."
     area.innerHTML = ""
     game()
 }
@@ -32,6 +32,9 @@ function game() {
     const RA2 = document.getElementById("fr")
     const PA = document.getElementById("UserC")
     const PA2 = document.getElementById("PCC")
+    var wins = 0;
+    var ties = 0;
+    var losses = 0;
     RA.append(UCD, CCD)
     
     let choices
@@ -98,6 +101,9 @@ function game() {
         getPic()
         getPic2()
         RA2.append(RD)
+        document.getElementById("Win").innerHTML = wins
+        document.getElementById("Tie").innerHTML = ties
+        document.getElementById("Lose").innerHTML = losses
     }
 
     const genCC = () => {
@@ -153,6 +159,7 @@ function game() {
             case "wizardglock":
             case "glockscissors":
                 RD.innerHTML = "You Win!!!"
+                wins++;
                 break
             case "paperscissors":
             case "scissorsrock":
@@ -191,6 +198,7 @@ function game() {
             case "glockwizard":
             case "scissorsglock":  
                 RD.innerHTML = "You lose!"
+                losses++;
                 break
             case "lizardlizard":
             case "spockspock":
@@ -202,6 +210,7 @@ function game() {
             case "wizardwizard":
             case "glockglock":
                 RD.innerHTML = "Draw!!"
+                ties++;
                 break
         }
     }
