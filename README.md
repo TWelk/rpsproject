@@ -26,3 +26,9 @@ Go to application site, select difficulty and then pick a weapon. the computer w
 * <a href="mailto:it-support@kth.se">twelker08@gmail.com</a>
 ## Demo GIF
 ![DemoVideo](./Assets/Images/RockPaperScissors.gif)
+## Live Site
+* Application:
+    * https://twelk.github.io/rpsproject/
+
+* Repository:
+    * https://github.com/TWelk/rpsproject
